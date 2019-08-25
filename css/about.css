@@ -156,20 +156,20 @@ h1 {
   font-size: 4rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.7rem;
   padding-bottom: 10px;
 }
 h3 {
-  font-size: 2.9rem;
+  font-size: 3.2rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 2rem;
   padding-bottom: 10px;
 }
 img {
@@ -227,6 +227,7 @@ img {
   margin: 10px 0;
   color: #bf4aa8;
   font-size: 2em;
+  font-weight: bold;
 }
 @media (max-width:500px) {
   .top-nav .nav a {
@@ -265,6 +266,7 @@ img {
   margin: 10px 0;
   color: #bf4aa8;
   font-size: 1.5em;
+  font-weight: bold;
 }
 @media (max-width:500px) {
   .foot-nav a {
@@ -276,7 +278,7 @@ img {
   .foot-nav a:hover {
     background-color: #bf4aa8;
     color: #d9d9d9;
-    font-weight: bold;
+    font-weight: bolder;
   }
 }
 .bottom {
@@ -318,8 +320,6 @@ html .main .top {
   }
 }
 html .main .top .content {
-  border: 2px solid #bf4aa8;
-  border-radius: 3%;
   width: 45%;
   padding: 2%;
   color: #bf4aa8;
@@ -341,10 +341,28 @@ html .main .top .content h2 {
 }
 html .team {
   width: 95%;
-  padding-left: 10%;
+  padding-left: 15%;
+}
+@media (max-width:800px) {
+  html .team {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) {
+  html .team {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 html .team .profile {
-  width: 95%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   padding: 2%;
@@ -363,6 +381,12 @@ html .team .profile {
     flex-direction: column;
   }
 }
+html .team .profile h3 {
+  color: #bf4aa8;
+}
+html .team .profile h4 {
+  color: #d9d9d9;
+}
 html .team .profile #pics {
   width: 50%;
   height: auto;
@@ -375,13 +399,13 @@ html .team .profile #pics {
 }
 @media (max-width:800px) {
   html .team .profile #pics {
-    width: 50%;
+    width: 75%;
     height: auto;
   }
 }
 @media (max-width:500px) {
   html .team .profile #pics {
-    width: 50%;
+    width: 75%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -394,8 +418,9 @@ html .team .profile .info {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #bf4aa8;
+  color: #d9d9d9;
   padding: 2%;
+  font-size: 2em;
 }
 @media (max-width:800px) {
   html .team .profile .info {
@@ -405,6 +430,22 @@ html .team .profile .info {
 @media (max-width:500px) {
   html .team .profile .info {
     width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+html .team .profile .info a {
+  text-decoration: none;
+  color: #bf4aa8;
+  font-size: 3.2rem;
+}
+html .team .profile .info .fa-github:before {
+  content: "\f09b";
+}
+@media (max-width:500px) {
+  html .team .profile2 {
+    flex-direction: column-reverse;
     display: flex;
     justify-content: center;
     align-items: center;

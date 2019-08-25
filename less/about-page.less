@@ -1,5 +1,5 @@
 html{
-    background-color: @blue;
+    background-color:@blue;
     .main{
        
         .top{
@@ -15,8 +15,8 @@ html{
                 flex-direction: column;
             }
             .content{
-                border: @borderStyle;
-                border-radius: 3%;
+                //border: @borderStyle;
+                //border-radius: 3%;
                 width: 45%;
                 padding: 2%;
                 color: @purple;
@@ -40,10 +40,23 @@ html{
     
     .team{
         width: 95%;
-        padding-left: 10%;        
+        padding-left: 15%;
+        
+        @media @tablet{
+            width: 85%;
+            .center();
+            flex-direction: column;
+            
+        }
+
+        @media @mobile{
+            width: 85%;
+            .center();
+            flex-direction: column;
+        }
 
         .profile{
-            width: 95%;
+            width: 80%;
             .flex();
             padding: 2%;
                    
@@ -58,6 +71,15 @@ html{
                 flex-direction: column;
             }
 
+            
+            h3{
+                color: @purple;
+            }
+
+            h4{
+                color: @white;
+            }
+
             #pics{
                 width: 50%;
                 height: auto;
@@ -67,22 +89,24 @@ html{
                 .center();
                 
                 @media @tablet{
-                    width: 50%;
+                    width: 75%;
                     height: auto; 
                 }
 
                 @media @mobile{
-                    width: 50%;
+                    width: 75%;
                     height: auto;
                     .center();
                 }
+
             }
             .info{
                 width: 50%;
                 .center();
                 flex-direction: column;
-                color: @purple;
+                color: @white;
                 padding: 2%;
+                font-size: 2em;
                 @media @tablet{
                     width: 50%;
                 }
@@ -90,8 +114,26 @@ html{
                     width: 85%;
                     .center();
                 }
+
+                a{
+                    text-decoration: none;
+                    color: @purple;
+                    font-size: 3.2rem;
+                }
+                .fa-github:before{
+                    content:"\f09b";
+                }
+                
             }
         }
+        .profile2{
+            @media @mobile{
+                flex-direction: column-reverse;
+                .center();
+               
+            }
+        }
+
     }
 }
 
