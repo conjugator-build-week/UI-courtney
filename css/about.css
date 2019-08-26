@@ -311,7 +311,7 @@ html .main .top {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 @media (max-width:500px) {
   html .main .top {
